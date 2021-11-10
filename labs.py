@@ -1,2 +1,2 @@
 from repeated_prisioners_dilemma.base_simulation import exp
-model_dir = 'models'
+model_dir = 'repeated_prisioners_dilemma'
