@@ -187,8 +187,20 @@ sim_params = {
 }
 exp = Experiment()
 c = config_sim(sim_params)
-exp.append_configs(
-    initial_state=genesis_states,
-    partial_state_update_blocks=partial_state_update_blocks,
-    sim_configs=c
-)
+
+exp.append_model(model_id='base_simulation',
+                 initial_state=genesis_states,
+                 partial_state_update_blocks=partial_state_update_blocks,
+                 sim_configs=c)
+
+sim_params = {
+    'T': range(1000),
+    'N': 10,
+    'M': sys_params
+}
+d = config_sim(sim_params)
+
+exp.append_model(model_id='long_simulation',
+                 initial_state=genesis_states,
+                 partial_state_update_blocks=partial_state_update_blocks,
+                 sim_configs=c)
