@@ -203,4 +203,4 @@ d = config_sim(sim_params)
 exp.append_model(model_id='long_simulation',
                  initial_state=genesis_states,
                  partial_state_update_blocks=partial_state_update_blocks,
-                 sim_configs=c)
+                 sim_configs=d)
