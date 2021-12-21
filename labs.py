@@ -1,3 +1,3 @@
-from repeated_prisioners_dilemma.config import exp
+from models.config import exp
 
-model_dir = "repeated_prisioners_dilemma"
+model_dir = "models"
